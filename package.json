@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "playwright test --project=chromium --workers=1",
+    "test:all": "playwright test --workers=1",
+    "report": "playwright show-report"
   },
   "keywords": [],
   "author": "",
