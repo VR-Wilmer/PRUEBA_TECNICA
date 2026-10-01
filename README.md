@@ -91,15 +91,7 @@ Abre el reporte HTML con el resultado de cada prueba. Cuando una prueba falla, e
 | TC-01 | `tests/TC-01-ApplyCouponSucces.spec.ts` | Al aplicar `FIDELIDAD5` el descuento es el 5 % del subtotal y `total = subtotal - (subtotal × 5 %)`. |
 | TC-02 | `tests/TC-02-CouponAlreadyApplied.spec.ts` | Aplicar `FIDELIDAD5` por segunda vez devuelve el error `Código ya utilizado` y el descuento solo se aplica una vez. |
 
-## 5. Consultas SQL
-
-`queries.sql` contiene las consultas de validación de datos (MariaDB / MySQL 8) para la base `oky_qa_test`.
-Ábrelo en tu cliente SQL (MySQL Workbench, DBeaver, HeidiSQL, etc.) y ejecuta cada consulta.
-El escenario de prueba se ejecuta dentro de una transacción; usa `ROLLBACK;` para deshacer los cambios o `COMMIT;` para guardarlos.
-
-> Ejecuta estas consultas solo en una base de datos de pruebas **propia**.
-
-## 6. Solución de problemas
+## 5. Solución de problemas
 
 | Problema | Solución |
 | --- | --- |
